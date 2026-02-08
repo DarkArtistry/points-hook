@@ -8,7 +8,9 @@
       "Bash(git submodule update:*)",
       "Bash(forge build:*)",
       "Bash(forge test:*)",
-      "Bash(MAINNET_RPC_URL=\"https://eth.rpc.blxrbdn.com\" forge test:*)"
+      "Bash(MAINNET_RPC_URL=\"https://eth.rpc.blxrbdn.com\" forge test:*)",
+      "WebSearch",
+      "WebFetch(domain:docs.uniswap.org)"
     ]
   }
 }

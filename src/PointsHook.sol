@@ -80,6 +80,15 @@ contract PointsHook is BaseHook, ERC1155 {
             // Mint the points
             _assignPoints(key.toId(), hookData, pointsForSwap);
         }
+
+        // - amount0 = how much of currency0 (ETH in your case) moved                   
+        // - amount1 = how much of currency1 (TOKEN in your case) moved
+        // Another solution is just: 
+        // uint256 ethSpendAmount = uint256(int256(-delta.amount0()));
+        // uint256 pointsForSwap = ethSpendAmount / 5;
+        // without if else statements
+        // The BalanceDelta records what actually happened in the swap regardless of how it was specified. delta.amount0() is always 
+        // negative when ETH leaves the user (spent), so -delta.amount0() gives you the positive ETH amount in both cases.
         return (this.afterSwap.selector, 0);
     }
 

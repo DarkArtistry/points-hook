@@ -7,7 +7,8 @@
       "Bash(git symbolic-ref:*)",
       "Bash(git submodule update:*)",
       "Bash(forge build:*)",
-      "Bash(forge test:*)"
+      "Bash(forge test:*)",
+      "Bash(MAINNET_RPC_URL=\"https://eth.rpc.blxrbdn.com\" forge test:*)"
     ]
   }
 }

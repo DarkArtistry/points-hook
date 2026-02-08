@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo view:*)",
+      "Bash(gh api:*)",
+      "Bash(git checkout:*)",
+      "Bash(git symbolic-ref:*)",
+      "Bash(git submodule update:*)",
+      "Bash(forge build:*)",
+      "Bash(forge test:*)"
+    ]
+  }
+}
